@@ -7,14 +7,18 @@ namespace In_Class_Abstract_Class
 
         public string Model {get; set;}
 
-        public string Color {get; set;}
-
-        public abstract void Drive():
-
-        public abstract void BurnRubber(); 
+        public abstract string Color {get; set;}
+        public virtual void ShowCarFax() 
         {
-            //this is where I would of made my abstract method
+            System.Console.WriteLine("unknown car");
         }
+
+        public virtual void Drive()
+        {
+            System.Console.WriteLine("you drive an unknown vehicle");
+        }
+
+        // public void BurnRubber(); 
 
 
         public virtual void Start()
@@ -22,13 +26,15 @@ namespace In_Class_Abstract_Class
             System.Console.WriteLine("the car has started");
         }
 
-        public void Stop()
+        public virtual void Stop()
         {
             System.Console.WriteLine("the car has stoped");
         }
-        public void Drive()
+        public virtual void ShowColor()
         {
-            System.Console.WriteLine("the car is now driving");
+
         }
+
+
     }
 }
