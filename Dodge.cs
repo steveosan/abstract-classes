@@ -2,7 +2,7 @@ namespace In_Class_Abstract_Class
 {
     public class Dodge : Vehicle
     {
-        public string Color {get; set;}
+        public override string Color {get; set;}
 
         public override void Drive()
         {
